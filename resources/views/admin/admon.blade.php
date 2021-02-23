@@ -7,6 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Halaman Admon</h1>
+    <h1>Halaman Badut Komedi Putar</h1>
 </body>
 </html>
