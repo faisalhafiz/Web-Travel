@@ -14,4 +14,6 @@ class Artikel extends Model {
         'title',
         'desc'
     ];
+
+    protected $guarded = [];
 }

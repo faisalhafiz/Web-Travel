@@ -26,10 +26,11 @@ Route::resource('articles', HomeController::class)->except([
 
 Route::middleware('auth')->group(function(){
 
-    Route::get('/dashboard', 'DashboardController@dashboard');
-    Route::get('/add', 'DashboardController@tambah');
-    Route::get('/create', 'DashboardController@buat');
-    Route::get('/photo', 'DashboardController@photo');
+    Route::get('/dashboard',    'DashboardController@dashboard');
+    Route::get('/add',          'DashboardController@tambah');
+    Route::get('/show',         'DashboardController@lihat');
+    Route::get('/photo',        'DashboardController@photo');
     Route::post('/add_process', 'ArtikelController@add_process');
+    Route::post('/upload-images','ArtikelController@uploadImage')->name('post.gambar');
 });
 
