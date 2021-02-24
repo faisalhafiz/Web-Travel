@@ -1,9 +1,7 @@
 @extends('layouts.master-admin')
 
-<!-- membuat komponen title sebagai judul halaman -->
 @section('title', 'Tampilan Artikel')
 
-<!-- membuat komponen main yang berisi form untuk mengisi judul dan isi artikel -->
 @section('main')
 <div class="table-responsive">
     <table class="table">

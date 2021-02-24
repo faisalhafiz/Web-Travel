@@ -1,6 +1,5 @@
 @extends('layouts/master-admin')
  
-<!-- membuat komponen title sebagai judul halaman -->
 @section('title', 'Tambah Artikel')
 
 @section('css')
