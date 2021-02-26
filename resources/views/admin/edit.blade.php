@@ -1,12 +1,13 @@
-@extends('layouts/master-admin')
- 
-@section('title', 'Tambah Artikel')
+@extends('layouts.master-admin')
+
+@section('Title', 'Edit Artikel')
 
 @section('css')
     
 @endsection
 
 @section('js')
+    
 <script src="{{ asset('plugin/ckeditor/ckeditor.js') }}"></script>
 <script>
     $(document).ready(function(){
@@ -17,8 +18,7 @@
     })
 </script>
 @endsection
- 
-<!-- membuat komponen main yang berisi form untuk mengisi judul dan isi artikel -->
+
 @section('main')
 <div class="col-md-8 col-sm-12 bg-white p-4">
     @if ($pesan = Session::get('Sukses'))
@@ -48,7 +48,7 @@
     </div>
     @endif
 
-    <form method="post" action="/add_process">
+    <form method="post" action="/artikel/edit/{{ $id }}">
     @csrf
         <div class="form-group">
             <label>Judul Artikel</label>
@@ -60,12 +60,10 @@
         </div>
         <div class="col-md-5 ml-md-3 col-sm-12 bg-white p-1" style="height:120px !important">
             <div class="form-group">
-                <button type="submit" class="btn btn-primary"> Upload </button>
+                <button type="submit" class="btn btn-primary">Edit Artikel</button>
                 <a class="btn btn-secondary" href="/artikel/show">Kembali</a>
             </div>
         </div>
     </form>
 </div>
 @endsection
- 
-

@@ -12,7 +12,8 @@ class Artikel extends Model {
 
     protected $fillable = [
         'title',
-        'desc'
+        'desc',
+        'slug'
     ];
 
     protected $guarded = [];

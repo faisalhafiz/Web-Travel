@@ -31,15 +31,14 @@
                         @csrf
                     </form>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/artikel/show">Artikel Dashboard</a>
+                </li>
             </ul>
     </form>
     </nav>
     <div class="container mt-4">
-        <div class="row">
-            @yield('main')
-            @yield('sidebar')
-            @yield('pilihan')
-        </div>
+        @yield('main')
     </div>
 </body>
 

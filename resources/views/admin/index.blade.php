@@ -6,14 +6,8 @@
 
 @section('title', 'Home')
 
-@section('pilihan')
-
-<body>
+@section('main')
     <div class="container mt-auto">
-        <a href="/add" class="btn btn-info btn-lg btn-block down" role="button" aria-pressed="true">Tambah Artikel</a>
-        <a href="/show" class="btn btn-info btn-lg btn-block down" role="button" aria-pressed="true">Lihat Artikel</a>
-        <a href="/photo" class="btn btn-info btn-lg btn-block down" role="button" aria-pressed="true">Galeri Foto</a>
+        <a href="/photo" class="btn btn-secondary btn-lg btn-block down ukuran" role="button" aria-pressed="true">Galeri Foto</a>
     </div>
-</body>
-
 @endsection

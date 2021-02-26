@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Artikel as KancilBinal;
+use App\Models\Artikel as Lihat;
 
 class DashboardController extends Controller
 {
@@ -12,9 +12,9 @@ class DashboardController extends Controller
         return view('admin.index');
     }
 
-    public function lihat(){
-        $dadaMontok = KancilBinal::all();
-        return view('admin.show', compact('dadaMontok'));
+    public function lihatArtikel(){
+        $bungkus = Lihat::all();
+        return view('admin.show', compact('bungkus'));
     }
 
     public function tambah(){
