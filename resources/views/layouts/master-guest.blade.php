@@ -15,8 +15,8 @@
 
 <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">
-                <img src="http://placehold.it/150x50?text=Logo" alt="">
+            <a class="navbar-brand" href="/">
+                <img src="images/melialogo.jpg" width="130" height="50" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,38 +25,32 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Agen Travel</a>
+                        <a class="nav-link" href="/guest/profil">Profil Melia</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sewa Mobil</a>
+                        <a class="nav-link" href="/guest/mobil">Persewaan Mobil</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Wisata
+                            Paket Wisata
                         </a>
                         <div class="dropdown-menu slide" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Wisata Air Panas</a>
-                            <a class="dropdown-item" href="#">Wisata Air Terjun</a>
-                            <a class="dropdown-item" href="#">Wisata Candi</a>
-                            <a class="dropdown-item" href="#">Wisata Danau</a>
-                            <a class="dropdown-item" href="#">Wisata Goa</a>
-                            <a class="dropdown-item" href="#">Wisata Gunung</a>
-                            <a class="dropdown-item" href="#">Wisata Hutan</a>
-                            <a class="dropdown-item" href="#">Wisata Kawah</a>
-                            <a class="dropdown-item" href="#">Wisata Kebun Binatang</a>
-                            <a class="dropdown-item" href="#">Wisata Museum</a>
-                            <a class="dropdown-item" href="#">Wisata Pantai</a>
-                            <a class="dropdown-item" href="#">Wisata Taman</a>
-                            {{-- membuat garis -> <div class="dropdown-divider"></div> --}}
+                            <a class="dropdown-item" href="#">Paket Tour Wisata Bandung</a>
+                            <a class="dropdown-item" href="#">Paket Tour Wisata Banyuwangi</a>
+                            <a class="dropdown-item" href="#">Paket Tour Wisata Jogjakarta</a>
+                            <a class="dropdown-item" href="#">Paket Tour Wisata Malang</a>
+                            <a class="dropdown-item" href="#">Paket Tour Wisata Pacitan</a>
+                            <a class="dropdown-item" href="#">Paket Tour Wisata Semarang</a>
+                            
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Galeri Foto</a>
+                        <a class="nav-link" href="/guest/photo">Galeri Foto Melia</a>
                     </li>
 
                 </ul>
@@ -69,7 +63,10 @@
        
     </div>
     <div class="container">
-        @yield('konten')
+        @yield('home')
+        @yield('profil')
+        @yield('mobil')
+        @yield('photo')
     </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

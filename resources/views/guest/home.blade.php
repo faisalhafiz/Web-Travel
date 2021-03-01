@@ -2,7 +2,7 @@
 
 @section('title', 'Home')
 
-@section('konten')
+@section('home')
 <h3>Cuma Test</h3>
 <p>Halaman Guest</p>
 @endsection
