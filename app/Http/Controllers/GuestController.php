@@ -27,4 +27,34 @@ class GuestController extends Controller
     {
         return view('guest.photo');
     }
+
+    public function wisata1()
+    {
+        return view('guest.wisatabandung');
+    }
+
+    public function wisata2()
+    {
+        return view('guest.wisatabanyuwangi');
+    }
+
+    public function wisata3()
+    {
+        return view('guest.wisatajogja');
+    }
+
+    public function wisata4()
+    {
+        return view('guest.wisatamalang');
+    }
+
+    public function wisata5()
+    {
+        return view('guest.wisatapacitan');
+    }
+
+    public function wisata6()
+    {
+        return view('guest.wisatasemarang');
+    }
 }

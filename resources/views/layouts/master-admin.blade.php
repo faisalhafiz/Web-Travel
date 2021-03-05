@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm" style="background-color: #1e212d !important;">
         <a class="navbar-brand" href="/dashboard">Dashboard Admin</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,6 +33,9 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/artikel/show">Artikel Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/admin/photo">Upload Foto</a>
                 </li>
             </ul>
     </form>

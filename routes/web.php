@@ -20,9 +20,15 @@ Route::get('/', function(){
     return view('guest.home');
 });
 
-Route::get('/guest/profil',    'GuestController@profil');
-Route::get('/guest/mobil',     'GuestController@mobil');
-Route::get('/guest/photo',     'GuestController@photo');
+Route::get('/guest/profil',           'GuestController@profil');
+Route::get('/guest/mobil',            'GuestController@mobil');
+Route::get('/guest/wisatabandung',    'GuestController@wisata1');
+Route::get('/guest/wisatabanyuwangi', 'GuestController@wisata2');
+Route::get('/guest/wisatajogja',      'GuestController@wisata3');
+Route::get('/guest/wisatamalang',     'GuestController@wisata4');
+Route::get('/guest/wisatapacitan',    'GuestController@wisata5');
+Route::get('/guest/wisatasemarang',   'GuestController@wisata6');
+Route::get('/guest/photo',            'GuestController@photo');
 
 Route::resource('articles', HomeController::class)->except([
     'show'
@@ -36,7 +42,7 @@ Route::middleware('auth')->group(function(){
     Route::get('/artikel/pilih/{id}',   'ArtikelController@pilihArtikel');
     Route::post('/artikel/edit/{id}',   'ArtikelController@editArtikel');
     Route::get('/artikel/delete/{id}',  'ArtikelController@hapusArtikel');
-    Route::get('/photo',                'DashboardController@photo');
+    Route::get('/admin/photo',          'DashboardController@photo');
     Route::post('/add_process',         'ArtikelController@add_process');
     Route::post('/upload-images',       'ArtikelController@uploadImage')->name('post.gambar');
 });
