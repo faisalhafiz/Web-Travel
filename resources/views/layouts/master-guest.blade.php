@@ -47,7 +47,6 @@
                         <a class="dropdown-item" href="/guest/wisatamalang">Paket Tour Wisata Malang</a>
                         <a class="dropdown-item" href="/guest/wisatapacitan">Paket Tour Wisata Pacitan</a>
                         <a class="dropdown-item" href="/guest/wisatasemarang">Paket Tour Wisata Semarang</a>
-
                     </div>
                 </li>
                 <li class="nav-item">
@@ -57,7 +56,7 @@
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Pencarian">
-                <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Pencarian</button>
+                <button class="btn btn-dark my-2 my-sm-0" type="submit">Pencarian</button>
             </form>
         </div>
     </nav>

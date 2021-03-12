@@ -1,7 +1,15 @@
 body {
-    background-color:white;
+    background-image: linear-gradient(to right bottom, #f9f3f3, #edeef7, #f4f9f9, #f6f5f5, #f6f6f6);
 }
 
-.trans{
+.trans {
     opacity: 0.1;
+}
+
+.pad {
+    border-radius: 30px;
+    background: #73AD21;
+    padding: 20px;
+    width: 150px;
+    height: 18px;
 }
