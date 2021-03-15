@@ -33,7 +33,7 @@
                     <a class="nav-link" href="/guest/profil">Profil Melia</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/guest/mobil">Persewaan Mobil</a>
+                    <a class="nav-link" href="/guest/mobil">Sewa Mobil</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
