@@ -64,6 +64,8 @@
             </div>
         </div>
     </div>
+</div>
+@include('guest.footer')
 </body>
 
 @endsection

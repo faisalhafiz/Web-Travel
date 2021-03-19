@@ -1,4 +1,4 @@
-@extends('layouts/master-guest')
+@extends('layouts.master-guest')
 
 @section('title', 'Home')
 
@@ -12,6 +12,16 @@
 <body>
     <div class="marquee">
         <h1 class="mt-3">Selamat Datang di Web Melia Transport</h1>
+    </div>
+    <div class="mt-4 background">
+        <div class="trans">
+            <div class="container mt-2">
+                <h4 style="color: white">Laman Berita Home</h4>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-3">
+    @include('guest.share')
     </div>
     <div class="mt-4">
         <div class="container">
@@ -43,20 +53,7 @@
         </div>
     </div>
     </div>
-        <div class="trans mt-5">
-            <div class="container-md">
-                <img src="/images/melialogo.jpg" width="130" height="50" alt="">
-                <p class="mt-3">Kontak Kami</p>
-                <p>Facebook  : Deddy Bear</p>
-                <p>Instagram : Info Fact</p>
-                <p>Whatsapp  : 081270280225</p>
-                <p>Alamat    : Jl. Ploso 9 No.4 Tambaksari Surabaya</p>
-            </div>
-        </div>
-    <div class="text-center p-3" style="background-color: #dddddd;">
-        © 2021 Copyright:
-        <a class="text-dark" href="https://facebook.com">meliatrasport.com</a>
-    </div>
+    @include('guest.footer')
 </body>
 
 @endsection

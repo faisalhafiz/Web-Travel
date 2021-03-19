@@ -30,7 +30,7 @@
                     <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/guest/profil">Profil Melia</a>
+                    <a class="nav-link" href="/guest/profil">Profil</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/guest/mobil">Sewa Mobil</a>
@@ -73,6 +73,8 @@
         @yield('mlg')
         @yield('pct')
         @yield('smg')
+        @yield('footer')
+        @yield('share')
     </div>
 
 </body>

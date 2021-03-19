@@ -16,10 +16,13 @@
     <div class="mt-4 background">
         <div class="trans">
             <div class="container mt-2">
-                <h4 style="color: white">Daftar Mobil dan Biaya Sewa Melia Transport</h4>
+                <h4 style="color: white">Daftar Mobil dan Tarif Sewa</h4>
             </div>
         </div>
     </div>
+    <div class="container mt-3">
+        @include('guest.share')
+        </div>
     <div class="card-deck">
         <div class="card trans mt-3" style="width: 20rem">
             <img class="card-img-top gmbr" src="/images/hiace.jpg" alt="Card image cap">
@@ -68,20 +71,7 @@
         </div>
     </div>
     </div>
-    <div class="trans mt-5">
-        <div class="container-md">
-            <img src="/images/melialogo.jpg" width="130" height="50" alt="">
-            <p class="mt-3">Kontak Kami</p>
-            <p>Facebook : Deddy Bear</p>
-            <p>Instagram : Info Fact</p>
-            <p>Whatsapp : 081270280225</p>
-            <p>Alamat&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Jl. Ploso 9 No.4 Tambaksari Surabaya</p>
-        </div>
-    </div>
-    <div class="text-center p-3" style="background-color: #dddddd;">
-        © 2021 Copyright:
-        <a class="text-dark" href="https://facebook.com">meliatrasport.com</a>
-    </div>
+    @include('guest.footer')
 </body>
 
 @endsection
