@@ -10,9 +10,6 @@
 @section('profil')
 
 <body>
-    <div class="mt-3">
-        <h1>Profil Melia Transport</h1>
-    </div>
     <div class="mt-4 background">
         <div class="trans">
             <div class="container mt-2">

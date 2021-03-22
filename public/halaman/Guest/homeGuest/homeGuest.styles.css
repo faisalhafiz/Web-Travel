@@ -190,11 +190,12 @@ h5 {
 
 .fa {
     padding: 5px;
-    font-size: 30px;
+    font-size: 20px;
     width: 30px;
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
+    border-radius: 50%;
   }
   
   .fa:hover {
@@ -246,3 +247,12 @@ h5 {
     background: rgba(0, 255, 242, 0.5);
     box-shadow: black;
 }
+
+.corners1 {
+    border-radius: 25px;
+    background: #73AD21;
+    padding: 8px; 
+    width: 115px;
+    height: 20px;  
+    text-align: center;
+  }

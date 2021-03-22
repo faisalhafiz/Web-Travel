@@ -27,26 +27,23 @@
         <div class="container">
             <div class="row">
                 <div class="card card1" style="width: 65rem">
-                    <img class="card-img" src="/images/orange.png" alt="#">
-                    <h2 class="mt-2">Tailored Jeans</h2>
-                    <p>Isi Sebuah Artikel secara singkat sampe
-                        pembacanya kepo mau ngeklik.</p>
+                    <img class="card-img" src="/images/vrz.jpg" alt="#">
+                    <h2 class="mt-2">Daftar Penyewaan Mobil Melia Travel</h2>
+                    <p>Informasi Seputar Penyewaan Mobil</p>
                     <button>Lihat Selengkapnya</button>
                 </div>
             </div>
             <div class="row">
                 <div class="card card2 mt-4" style="width: 30rem">
-                    <img class="card-img" src="/images/orange.png" alt="#">
-                    <h2 class="mt-2">Tailored Jeans</h2>
-                    <p>Isi Sebuah Artikel secara singkat sampe
-                        pembacanya kepo mau ngeklik.</p>
+                    <img class="card-img" src="/images/bwi.jpg" alt="#" style="height: 320px">
+                    <h2 class="mt-2">Paket Wisata Banyuwangi by Melia Travel</h2>
+                    <p>Informasi Seputar Paket Wisata Banyuwangi</p>
                     <button>Lihat Selengkapnya</button>
                 </div>
                 <div class="card card2 mt-4" style="width: 30rem">
-                    <img class="card-img" src="/images/orange.png" alt="#">
-                    <h2 class="mt-2">Tailored Jeans</h2>
-                    <p>Isi Sebuah Artikel secara singkat sampe
-                        pembacanya kepo mau ngeklik.</p>
+                    <img class="card-img" src="/images/testimelia.jpg" alt="#" style="height: 320px">
+                    <h2 class="mt-2">Profil Melia Travel</h2>
+                    <p>Informasi Seputar Profil Melia Travel</p>
                     <button>Lihat Selengkapnya</button>
                 </div>
             </div>

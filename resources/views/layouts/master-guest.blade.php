@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm" style="background-color: white !important;">
         <a class="navbar-brand" href="/">
             <img src="/images/melialogo.jpg" width="130" height="50" alt="">
         </a>
