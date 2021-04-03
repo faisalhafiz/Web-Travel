@@ -27,30 +27,43 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="{{ route('home.index') }}">Home<span
+                            class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/guest/profil">Profil</a>
+                    <a class="nav-link" href="{{ route('home.profile') }}">Profil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/guest/mobil">Sewa Mobil</a>
+                    <a class="nav-link" href="{{ route('home.car') }}">Sewa Mobil</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Paket Wisata
                     </a>
                     <div class="dropdown-menu slide" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/guest/wisatabandung">Paket Tour Wisata Bandung</a>
-                        <a class="dropdown-item" href="/guest/wisatabanyuwangi">Paket Tour Wisata Banyuwangi</a>
-                        <a class="dropdown-item" href="/guest/wisatajogja">Paket Tour Wisata Jogjakarta</a>
-                        <a class="dropdown-item" href="/guest/wisatamalang">Paket Tour Wisata Malang</a>
-                        <a class="dropdown-item" href="/guest/wisatapacitan">Paket Tour Wisata Pacitan</a>
-                        <a class="dropdown-item" href="/guest/wisatasemarang">Paket Tour Wisata Semarang</a>
+                        <a class="dropdown-item" href="{{ route('home.travel.bandung') }}">
+                            Paket Tour Wisata Bandung
+                        </a>
+                        <a class="dropdown-item" href="{{ route('home.travel.banyuwangi') }}">
+                            Paket Tour Wisata Banyuwangi
+                        </a>
+                        <a class="dropdown-item" href="{{ route('home.travel.banyuwangi') }}">
+                            Paket Tour Wisata Jogjakarta
+                        </a>
+                        <a class="dropdown-item" href="{{ route('home.travel.malang') }}">
+                            Paket Tour Wisata Malang
+                        </a>
+                        <a class="dropdown-item" href="{{ route('home.travel.pacitan') }}">
+                            Paket Tour Wisata Pacitan
+                        </a>
+                        <a class="dropdown-item" href="{{ route('home.travel.semarang') }}">
+                            Paket Tour Wisata Semarang
+                        </a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/guest/photo">Testimonial</a>
+                    <a class="nav-link" href="{{ route('home.testimonial') }}">{{ __('Testimonial') }}</a>
                 </li>
 
             </ul>
