@@ -11,7 +11,7 @@
 
 <body>
     <div class="mt-4 background">
-        <div class="trans">
+        <div class="trans" style="border-radius: 15px">
             <div class="container mt-2">
                 <h4 style="color: white">Profil Lengkap Melia Transport</h4>
             </div>

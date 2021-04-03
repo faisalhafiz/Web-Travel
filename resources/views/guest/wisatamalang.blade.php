@@ -11,7 +11,7 @@
 
 <body>
     <div class="mt-4 background">
-        <div class="trans">
+        <div class="trans" style="border-radius: 15px">
             <div class="container mt-2">
                 <h4 style="color: white">Daftar Tarif Harga Paket Tour Wisata Malang</h4>
             </div>
@@ -176,7 +176,7 @@
             </div>
         </div>
         <div class="mt-4 background">
-            <div class="trans">
+            <div class="trans" style="border-radius: 15px">
                 <div class="container mt-2" style="text-align: center">
                     <h5 style="color: white">*Catatan : Harga sewaktu-waktu dapat berubah, harap hubungi admin Melia
                         untuk
@@ -185,7 +185,7 @@
             </div>
         </div>
         <div class="mt-4 background">
-            <div class="trans">
+            <div class="trans" style="border-radius: 15px">
                 <div class="container mt-2" style="text-align: center">
                     <h5 style="color: white">*Catatan : Untuk wisata / daerah lain yang ingin dikunjungi, silahkan
                         hubungi admin Melia.</h5>

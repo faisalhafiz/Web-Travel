@@ -1,9 +1,10 @@
 <body>
     <div class="trans mt-5">
         <div class="container-md mt-2">
-            <img src="/images/melialogo.jpg" width="170" height="80" alt="">
+            <img src="/images/melialogo.png" width="170" height="80" alt="">
             <p class="mt-3">Kontak Kami</p>
             <p>Facebook : Melia Sarana Transport</p>
+            <p>Instagram : meliasarana.transport</p>
             <p>Email : radenmasalit88@gmail.com</p>
             <p>No. Hp : 0821-3230-8686</p>
         </div>

@@ -50,7 +50,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/guest/photo">Galeri Foto Melia</a>
+                    <a class="nav-link" href="/guest/photo">Testimonial</a>
                 </li>
 
             </ul>

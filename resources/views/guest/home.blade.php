@@ -14,7 +14,7 @@
         <h1 class="mt-3">Selamat Datang di Web Melia Transport</h1>
     </div>
     <div class="mt-4 background">
-        <div class="trans">
+        <div class="trans" style="border-radius: 15px">
             <div class="container mt-2">
                 <h4 style="color: white">Laman Berita Home</h4>
             </div>
