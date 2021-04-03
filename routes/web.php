@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
 use Illuminate\Support\Facades\Auth;
 
 /*
@@ -18,34 +17,34 @@ use Illuminate\Support\Facades\Auth;
 Auth::routes();
 
 Route::get('/', function () {
-    return view('guest.home');
+    return view('frontend.pages.index');
 })->name('home.index');
 
-Route::get('/profile', 'GuestController@profil')
+Route::get('/profile', 'GuestController@profile')
     ->name('home.profile');
-Route::get('/car',            'GuestController@mobil')
+Route::get('/car',            'GuestController@car')
     ->name('home.car');
-Route::get('/travel/bandung',    'GuestController@wisata1')
+Route::get('/travel/bandung',    'GuestController@travelBandung')
     ->name('home.travel.bandung');
-Route::get('/travel/banyuwangi', 'GuestController@wisata2')
+Route::get('/travel/banyuwangi', 'GuestController@travelBanyuwangi')
     ->name('home.travel.banyuwangi');
-Route::get('/travel/jogja',      'GuestController@wisata3')
+Route::get('/travel/jogja',      'GuestController@travelJogja')
     ->name('home.travel.jogja');
-Route::get('/travel/malang',     'GuestController@wisata4')
+Route::get('/travel/malang',     'GuestController@travelMalang')
     ->name('home.travel.malang');
-Route::get('/travel/pacitan',    'GuestController@wisata5')
+Route::get('/travel/pacitan',    'GuestController@travelPacitan')
     ->name('home.travel.pacitan');
-Route::get('/travel/semarang',   'GuestController@wisata6')
+Route::get('/travel/semarang',   'GuestController@travelSemarang')
     ->name('home.travel.semarang');
-Route::get('/testimonial',            'GuestController@photo')
+Route::get('/testimonial',            'GuestController@testimonial')
     ->name('home.testimonial');
+Route::permanentRedirect('/travel', '/');
 
 Route::resource('articles', HomeController::class)->except([
     'show'
 ]);
 
 Route::middleware('auth')->group(function () {
-
     Route::get('/dashboard',            'DashboardController@dashboard');
     Route::get('/artikel/add',          'DashboardController@tambah');
     Route::get('/artikel/show',         'DashboardController@lihatArtikel');
@@ -54,5 +53,6 @@ Route::middleware('auth')->group(function () {
     Route::get('/artikel/delete/{id}',  'ArtikelController@hapusArtikel');
     Route::get('/admin/photo',          'DashboardController@photo');
     Route::post('/add_process',         'ArtikelController@add_process');
-    Route::post('/upload-images',       'ArtikelController@uploadImage')->name('post.gambar');
+    Route::post('/upload-images',       'ArtikelController@uploadImage')
+        ->name('post.gambar');
 });

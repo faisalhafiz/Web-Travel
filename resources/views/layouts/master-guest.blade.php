@@ -39,26 +39,26 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Paket Wisata
+                        {{ __('Paket Wisata') }}
                     </a>
                     <div class="dropdown-menu slide" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="{{ route('home.travel.bandung') }}">
-                            Paket Tour Wisata Bandung
+                            {{ __('Paket Tour Wisata Bandung') }}
                         </a>
                         <a class="dropdown-item" href="{{ route('home.travel.banyuwangi') }}">
-                            Paket Tour Wisata Banyuwangi
+                            {{ __('Paket Tour Wisata Banyuwangi') }}
                         </a>
                         <a class="dropdown-item" href="{{ route('home.travel.banyuwangi') }}">
-                            Paket Tour Wisata Jogjakarta
+                            {{ __('Paket Tour Wisata Jogjakarta') }}
                         </a>
                         <a class="dropdown-item" href="{{ route('home.travel.malang') }}">
-                            Paket Tour Wisata Malang
+                            {{ __('Paket Tour Wisata Malang') }}
                         </a>
                         <a class="dropdown-item" href="{{ route('home.travel.pacitan') }}">
-                            Paket Tour Wisata Pacitan
+                            {{ __('Paket Tour Wisata Pacitan') }}
                         </a>
                         <a class="dropdown-item" href="{{ route('home.travel.semarang') }}">
-                            Paket Tour Wisata Semarang
+                            {{ __('Paket Tour Wisata Semarang') }}
                         </a>
                     </div>
                 </li>

@@ -2,8 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
 class GuestController extends Controller
 {
 
@@ -12,49 +10,48 @@ class GuestController extends Controller
         return view('guest.home');
     }
 
-
-    public function profil()
+    public function profile()
     {
-        return view('guest.profil');
+        return view('frontend.pages.profile');
     }
 
-    public function mobil()
+    public function car()
     {
-        return view('guest.mobil');
+        return view('frontend.pages.car');
     }
 
-    public function photo()
+    public function testimonial()
     {
-        return view('guest.photo');
+        return view('frontend.pages.testimonial');
     }
 
-    public function wisata1()
+    public function travelBandung()
     {
-        return view('guest.wisatabandung');
+        return view('frontend.pages.travel.travelBandung');
     }
 
-    public function wisata2()
+    public function travelBanyuwangi()
     {
-        return view('guest.wisatabanyuwangi');
+        return view('frontend.pages.travel.travelBanyuwangi');
     }
 
-    public function wisata3()
+    public function travelJogja()
     {
-        return view('guest.wisatajogja');
+        return view('frontend.pages.travel.travelJogja');
     }
 
-    public function wisata4()
+    public function travelMalang()
     {
-        return view('guest.wisatamalang');
+        return view('frontend.pages.travel.travelMalang');
     }
 
-    public function wisata5()
+    public function travelPacitan()
     {
-        return view('guest.wisatapacitan');
+        return view('frontend.pages.travel.travelPacitan');
     }
 
-    public function wisata6()
+    public function travelSemarang()
     {
-        return view('guest.wisatasemarang');
+        return view('frontend.pages.travel.travelSemarang');
     }
 }
