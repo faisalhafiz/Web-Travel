@@ -9,10 +9,10 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="{{ route('home.index') }}">Home<span class="sr-only">(current)</span></a>
+            <li class="nav-item {{ Request::route()->getName() == 'home.index' ? 'active' : '' }}">
+                <a class="nav-link" href="{{ route('home.index') }}">Home</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item {{ Request::route()->getName() == 'home.profile' ? 'active' : '' }}">
                 <a class="nav-link" href="{{ route('home.profile') }}">Profil</a>
             </li>
             <li class="nav-item">

@@ -13,11 +13,6 @@ class GuestController extends Controller
         return view('frontend.pages.index', ['post' => $post]);
     }
 
-    public function home()
-    {
-        return view('guest.home');
-    }
-
     public function profile()
     {
         return view('frontend.pages.profile');
