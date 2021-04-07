@@ -2,8 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Artikel;
+
 class GuestController extends Controller
 {
+
+    public function index()
+    {
+        $post = Artikel::all();
+        return view('frontend.pages.index', ['post' => $post]);
+    }
 
     public function home()
     {

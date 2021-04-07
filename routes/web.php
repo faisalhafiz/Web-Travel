@@ -16,9 +16,7 @@ use Illuminate\Support\Facades\Auth;
 
 Auth::routes();
 
-Route::get('/', function () {
-    return view('frontend.pages.index');
-})->name('home.index');
+Route::get('/', 'GuestController@index')->name('home.index');
 
 Route::get('/profile', 'GuestController@profile')
     ->name('home.profile');
