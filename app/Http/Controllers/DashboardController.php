@@ -10,7 +10,8 @@ class DashboardController extends Controller
 
     public function dashboard()
     {
-        return view('admin.index');
+        // return view('admin.index');
+        return view('backend.pages.dashboard');
     }
 
     public function lihatArtikel()

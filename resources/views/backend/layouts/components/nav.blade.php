@@ -12,7 +12,7 @@
                 <div class="d-sm-none d-lg-inline-block">{{ __('Hai, ') . Auth::user()->name }}</div>
             </a>
             <div class="dropdown-menu dropdown-menu-right">
-                <a href="{{ route('changePassword') }}" class="dropdown-item has-icon">
+                <a href="#" class="dropdown-item has-icon">
                     <i class="fas fa-key"></i> {{ __('Ganti Password') }}
                 </a>
                 <div class="dropdown-divider"></div>

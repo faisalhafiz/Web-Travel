@@ -7,7 +7,6 @@
 @endsection
 
 @section('content')
-    {{ $post }}
     <div class="marquee">
         <h1 class="mt-3">{{ __('Selamat Datang di Web Melia Transport') }}</h1>
     </div>
@@ -19,7 +18,7 @@
         </div>
     </div>
     <div class="container mt-3">
-        @include('guest.share')
+        @include('frontend.layouts.components.share')
     </div>
     <div class="mt-4">
         <div class="container">
@@ -32,15 +31,6 @@
                         'desc' => $p->desc, 'btn' => 'Lihat Selengkapnya'])
                     </div>
                 @endforeach
-                {{-- <div class="col">
-                    @include('frontend.pages.components.card', ['img' => 'bwi.jpg', 'title' => 'Paket Wisata Banyuwangi',
-                    'desc' => 'Informasi Seputar Paket Wisata Banyuwangi', 'btn' => 'Lihat Selengkapnya'])
-                </div>
-                <div class="col">
-                    @include('frontend.pages.components.card', ['img' => 'testimelia.jpg', 'title' => 'Profil Melia Sarana
-                    Transport',
-                    'desc' => 'Informasi Seputar Profil Melia Sarana Transport', 'btn' => 'Lihat Selengkapnya'])
-                </div> --}}
             </div>
         </div>
     </div>

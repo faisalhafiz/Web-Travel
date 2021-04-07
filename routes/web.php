@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-Auth::routes();
+Auth::routes(['reset' => false, 'register' => false]);
 
 Route::get('/', 'GuestController@index')->name('home.index');
 
@@ -43,7 +43,8 @@ Route::resource('articles', HomeController::class)->except([
 ]);
 
 Route::middleware('auth')->group(function () {
-    Route::get('/dashboard',            'DashboardController@dashboard');
+    Route::get('/dashboard',            'DashboardController@dashboard')
+        ->name('admin.dashboard');
     Route::get('/artikel/add',          'DashboardController@tambah');
     Route::get('/artikel/show',         'DashboardController@lihatArtikel');
     Route::get('/artikel/pilih/{id}',   'ArtikelController@pilihArtikel');

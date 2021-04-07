@@ -1,10 +1,10 @@
-@include('layouts.components.header')
+@include('backend.layouts.components.header')
 
 <body>
     <div id="app">
         <div class="main-wrapper">
-            @include('layouts.components.nav')
-            @include('layouts.components.sidebar')
+            @include('backend.layouts.components.nav')
+            @include('backend.layouts.components.sidebar')
             <!-- Main Content -->
             <div class="main-content">
                 <section class="section">
@@ -20,18 +20,18 @@
             </div>
             <footer class="main-footer">
                 <div class="footer-left">
-                    @include('layouts.components.credit')
+                    @include('backend.layouts.components.credit')
                 </div>
                 <div class="footer-right">
                     {{ __('v0.1') }} <div class="bullet"></div>
-                    {{ __('Laravel v').Illuminate\Foundation\Application::VERSION }}
+                    {{ __('Laravel v') . Illuminate\Foundation\Application::VERSION }}
                     <div class="bullet"></div>
-                    {{ __('PHP v').PHP_VERSION }}
+                    {{ __('PHP v') . PHP_VERSION }}
                 </div>
             </footer>
         </div>
     </div>
-    @include('layouts.components.footer')
+    @include('backend.layouts.components.footer')
     @yield('script')
 </body>
 

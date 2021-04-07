@@ -1,16 +1,16 @@
 @extends('layouts.master-admin')
 
 @section('css')
-<link rel="stylesheet" href="{{ asset('css/dashboard.styles.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/dashboard.styles.css') }}">
 @endsection
+{{-- @section('title', 'Home')
 
-@section('title', 'Home')
-
-@section('main')
+@section('main') --}}
 
 <body>
     <div>
         <div class="container-md text-center">
+
             <body>
                 <h1>Halaman Index Dashboard Admin</h1>
             </body>
@@ -19,6 +19,7 @@
     <div>
         <div>
             <div class="mt-md-auto pad">
+
                 <body>
                     <p>Daftar Riwayat Aktivitas Admin</p>
                 </body>
