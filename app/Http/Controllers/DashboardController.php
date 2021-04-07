@@ -7,20 +7,23 @@ use App\Models\Artikel as Lihat;
 
 class DashboardController extends Controller
 {
-    
-    public function dashboard(){
+
+    public function dashboard()
+    {
         return view('admin.index');
     }
 
-    public function lihatArtikel(){
+    public function lihatArtikel()
+    {
         $bungkus = Lihat::all();
         return view('admin.show', compact('bungkus'));
     }
 
-    public function tambah(){
+    public function tambah()
+    {
         return view('admin.add');
     }
-    
+
     public function photo()
     {
         return view('admin.photo');
