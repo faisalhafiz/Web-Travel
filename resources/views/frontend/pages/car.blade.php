@@ -1,15 +1,12 @@
-@extends('layouts.master-guest')
+@extends('frontend.layouts.default')
 
 @section('title', 'Persewaan Mobil')
 
 @section('css')
-<link rel="stylesheet" href="{{ asset('halaman/Guest/homeGuest/homeGuest.styles.css') }}">
-
+    <link rel="stylesheet" href="{{ asset('halaman/Guest/homeGuest/homeGuest.styles.css') }}">
 @endsection
 
-@section('mobil')
-
-<body>
+@section('car')
     <div class="mt-4 background" style="align-content: center">
         <div class="trans" style="border-radius: 15px">
             <div class="container mt-2">
@@ -18,66 +15,22 @@
         </div>
     </div>
     <div class="container mt-3">
-        @include('guest.share')
+        @include('frontend.layouts.components.share')
     </div>
-    <div class="card-deck">
-        <div class="card trans mt-3" style="width: 20rem; border-radius: 15px">
-            <img class="card-img-top gmbr" src="/images/hiace.jpg" alt="Card image cap" style="border-radius: 15px">
-            <div class="card-body">
-                <h5 class="card-title" style="text-align: center">Toyota Hiace</h5>
-                <p class="card-text" style="text-align: center">Harga sewa rata-rata : Rp 250.000,00 perhari</p>
-            </div>
-        </div>
-        <div class="card trans mt-3" style="width: 20rem; border-radius: 15px">
-            <img class="card-img-top gmbr" src="/images/innova.jpeg" alt="Card image cap" style="border-radius: 15px">
-            <div class="card-body">
-                <h5 class="card-title" style="text-align: center">Toyota Innova</h5>
-                <p class="card-text" style="text-align: center">Harga sewa rata-rata : Rp 200.000,00 perhari</p>
-            </div>
-        </div>
-    </div>
-    <div class="card-deck">
-        <div class="card trans mt-3" style="width: 20rem; border-radius: 15px">
-            <img class="card-img-top gmbr" src="/images/alphard.jpg" alt="Card image cap" style="border-radius: 15px">
-            <div class="card-body">
-                <h5 class="card-title" style="text-align: center">Toyota Alphad</h5>
-                <p class="card-text" style="text-align: center">Harga sewa rata-rata : Rp 300.000,00 perhari</p>
-            </div>
-        </div>
-        <div class="card trans mt-3" style="width: 20rem; border-radius: 15px">
-            <img class="card-img-top gmbr" src="/images/fortuner.jpg" alt="Card image cap" style="border-radius: 15px">
-            <div class="card-body">
-                <h5 class="card-title" style="text-align: center">Toyota Fortuner</h5>
-                <p class="card-text" style="text-align: center">Harga sewa rata-rata : Rp 300.000,00 perhari</p>
-            </div>
+    <div class="mt-4">
+        <div class="container">
+            @if (count($post) > 0)
+                <div class="row mt-4">
+                    @foreach ($post as $p)
+                        <div class="col">
+                            @include('frontend.pages.components.card', ['img' => $p->img, 'title' => $p->title,
+                            'desc' => $p->desc, 'btn' => 'Lihat Selengkapnya'])
+                        </div>
+                    @endforeach
+                </div>
+            @else
+                <h3 class="text-center">{{ __('Tidak Ada Artikel') }}</h3>
+            @endif
         </div>
     </div>
-    <div class="card-deck">
-        <div class="card trans mt-3" style="width: 20rem; border-radius: 15px">
-            <img class="card-img-top gmbr" src="/images/vrz.jpg" alt="Card image cap" style="border-radius: 15px">
-            <div class="card-body">
-                <h5 class="card-title" style="text-align: center">Toyota VRZ</h5>
-                <p class="card-text" style="text-align: center">Harga sewa rata-rata : Rp 300.000,00 perhari</p>
-            </div>
-        </div>
-        <div class="card trans mt-3" style="width: 20rem; border-radius: 15px">
-            <img class="card-img-top gmbr" src="/images/vrz.jpg" alt="Card image cap" style="border-radius: 15px">
-            <div class="card-body">
-                <h5 class="card-title" style="text-align: center">Toyota VRZ</h5>
-                <p class="card-text" style="text-align: center">Harga sewa rata-rata : Rp 300.000,00 perhari</p>
-            </div>
-        </div>
-    </div>
-    <div class="mt-4 background">
-        <div class="trans" style="border-radius: 15px">
-            <div class="container mt-2" style="text-align: center">
-                <h5 style="color: white">*Catatan : Harga sewaktu-waktu dapat berubah, harap hubungi admin Melia untuk
-                    info lengkapnya.</h5>
-            </div>
-        </div>
-    </div>
-    </div>
-    @include('guest.footer')
-</body>
-
 @endsection

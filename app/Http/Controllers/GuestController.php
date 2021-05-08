@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Artikel;
+use Illuminate\Support\Str;
 
 class GuestController extends Controller
 {
@@ -10,7 +11,8 @@ class GuestController extends Controller
     public function index()
     {
         $post = Artikel::all();
-        return view('frontend.pages.index', ['post' => $post]);
+        $randomPost = Artikel::find(rand(Artikel::min('id'), Artikel::max('id')));
+        return view('frontend.pages.index', ['post' => $post, 'randomPost' => $randomPost]);
     }
 
     public function profile()
@@ -20,7 +22,8 @@ class GuestController extends Controller
 
     public function car()
     {
-        return view('frontend.pages.car');
+        $post = Artikel::where('category', 1)->get();
+        return view('frontend.pages.car', ['post' => $post]);
     }
 
     public function testimonial()
@@ -30,31 +33,37 @@ class GuestController extends Controller
 
     public function travelBandung()
     {
-        return view('frontend.pages.travel.travelBandung');
+        $post = Artikel::where('category', 2)->get();
+        return view('frontend.pages.travel.travelBandung', ['post' => $post]);
     }
 
     public function travelBanyuwangi()
     {
-        return view('frontend.pages.travel.travelBanyuwangi');
+        $post = Artikel::where('category', 3)->get();
+        return view('frontend.pages.travel.travelBanyuwangi', ['post' => $post]);
     }
 
     public function travelJogja()
     {
-        return view('frontend.pages.travel.travelJogja');
+        $post = Artikel::where('category', 4)->get();
+        return view('frontend.pages.travel.travelJogja', ['post' => $post]);
     }
 
     public function travelMalang()
     {
-        return view('frontend.pages.travel.travelMalang');
+        $post = Artikel::where('category', 5)->get();
+        return view('frontend.pages.travel.travelMalang', ['post' => $post]);
     }
 
     public function travelPacitan()
     {
-        return view('frontend.pages.travel.travelPacitan');
+        $post = Artikel::where('category', 6)->get();
+        return view('frontend.pages.travel.travelPacitan', ['post' => $post]);
     }
 
     public function travelSemarang()
     {
-        return view('frontend.pages.travel.travelSemarang');
+        $post = Artikel::where('category', 7)->get();
+        return view('frontend.pages.travel.travelSemarang', ['post' => $post]);
     }
 }

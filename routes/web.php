@@ -38,7 +38,7 @@ Route::get('/testimonial',            'GuestController@testimonial')
     ->name('home.testimonial');
 Route::permanentRedirect('/travel', '/');
 
-Route::resource('articles', HomeController::class)->except([
+Route::resource('articles', ArticleController::class)->except([
     'show'
 ]);
 

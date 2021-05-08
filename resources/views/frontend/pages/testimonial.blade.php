@@ -1,15 +1,12 @@
-@extends('layouts/master-guest')
+@extends('frontend.layouts.default')
 
 @section('title', 'Testimonial')
 
 @section('css')
-<link rel="stylesheet" href="{{ asset('halaman/Guest/homeGuest/homeGuest.styles.css') }}">
-
+    <link rel="stylesheet" href="{{ asset('halaman/Guest/homeGuest/homeGuest.styles.css') }}">
 @endsection
 
-@section('photo')
-
-<body>
+@section('testimonial')
     <div class="mt-4 background">
         <div class="trans" style="border-radius: 15px">
             <div class="container mt-2">
@@ -18,7 +15,7 @@
         </div>
     </div>
     <div class="container mt-3">
-        @include('guest.share')
+        @include('frontend.layouts.components.share')
     </div>
     <div class="container row mt-4 justify-content-center">
         <div class="trans" style="border-radius: 15px">
@@ -68,8 +65,4 @@
             </div>
         </div>
     </div>
-    </div>
-    @include('guest.footer')
-</body>
-
 @endsection

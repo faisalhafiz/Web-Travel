@@ -10,6 +10,8 @@
     @include('frontend.layouts.components.navigation')
     <div class="container">
         @yield('content')
+        @yield('car')
+        @yield('testimonial')
     </div>
 </body>
 @include('frontend.layouts.components.footer')

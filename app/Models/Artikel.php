@@ -5,7 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Artikel extends Model {
+class Artikel extends Model
+{
     use HasFactory;
 
     protected $table = 'artikel';
@@ -13,8 +14,13 @@ class Artikel extends Model {
     protected $fillable = [
         'title',
         'desc',
-        'slug'
+        'slug',
+        'img',
+        'category'
     ];
 
-    protected $guarded = [];
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
 }

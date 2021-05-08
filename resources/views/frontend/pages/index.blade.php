@@ -22,16 +22,21 @@
     </div>
     <div class="mt-4">
         <div class="container">
-            @include('frontend.pages.components.card', ['img' => 'vrz.jpg','title'=>'Daftar Penyewaan Mobil Melia
-            Travel','desc'=>'Informasi Seputar Penyewaan Mobil','btn'=>'Lihat Selengkapnya'])
-            <div class="row mt-4">
-                @foreach ($post as $p)
-                    <div class="col">
-                        @include('frontend.pages.components.card', ['img' => 'bwi.jpg', 'title' => $p->title,
-                        'desc' => $p->desc, 'btn' => 'Lihat Selengkapnya'])
-                    </div>
-                @endforeach
-            </div>
+            @if (count($post) > 0)
+                @include('frontend.pages.components.card', ['img' =>$randomPost['img'],
+                'title'=>$randomPost['title'],
+                'desc'=>$randomPost['desc'],'btn'=>'Lihat Selengkapnya'])
+                <div class="row mt-4">
+                    @foreach ($post as $p)
+                        <div class="col">
+                            @include('frontend.pages.components.card', ['img' => $p->img, 'title' => $p->title,
+                            'desc' => $p->desc, 'btn' => 'Lihat Selengkapnya'])
+                        </div>
+                    @endforeach
+                </div>
+            @else
+                <h3 class="text-center">{{ __('Tidak Ada Artikel') }}</h3>
+            @endif
         </div>
     </div>
 @endsection
